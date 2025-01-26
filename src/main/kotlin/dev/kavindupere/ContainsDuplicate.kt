@@ -12,4 +12,9 @@ class ContainsDuplicate {
         }
         return false
     }
+
+    // This is a more concise solution
+    fun hasDuplicateConcise(nums: Array<Int>): Boolean {
+        return nums.distinct().count() < nums.size
+    }
 }
